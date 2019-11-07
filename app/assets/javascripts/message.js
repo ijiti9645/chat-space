@@ -38,7 +38,6 @@ $(function(){
     
     .done(function(deta){
       var html = buildHTML(deta);
-      $('#message_content').val('');
       $('.form__submit').prop('disabled', false);
       $('.messages').append(html).animate({scrollTop: $('.messages')[0].scrollHeight});
       $('#new_message')[0].reset();
